@@ -154,38 +154,41 @@
                         Cuentanos en que te podemos ayudar?
                     </div>
                 </div>
-                <div class="row">
-                    <form class="col col-lg-8 offset-lg-2 pt-2">
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <input type="text" class="form-control" id="name" placeholder="Nombre">
-                            </div>
-                            <div class="form-group col">
-                                <input type="text" class="form-control" id="lastname" placeholder="Apellido">
-                            </div>
+                <div class="col col-lg-8 offset-lg-2 pt-2">
+                  <div id="cnt_form">
+                  <form id="contact-form" class="contact" name="contact-form" method="post" action="php/enviar2.php">
+                      <div class="form-group">
+                          <input type="text" name="nombre" class="form-control name-field" required="required" placeholder="Nombre">
+                      </div>
+                          <div class="form-group">
+                              <input type="text" name="apellido" class="form-control lastname-field" required="required" placeholder="Apellido">
                           </div>
-                        </form>.
-                  </div>
-                  <div class="row">
-                    <form class="col col-lg-8 offset-lg-2 pt-2">
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <input type="text" class="form-control" id="mail" placeholder="Correo">
-                            </div>
-                            <div class="form-group col">
-                                <input type="text" class="form-control" id="number" placeholder="Numero">
-                            </div>
-                          </div>
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <textarea class="form-control" placeholder="Cuentanos en que te podemos ayudar?" id="tema" rows="3"></textarea>
-                           </div>
                         </div>
-                      <button type="submit" class="btn btn-seven btn-block mb-4"data-toggle="modal" data-target="#modal">Enviar</button>
-                    </form>
+                        <div class="form-group">
+                          <input type="email" name="correo" class="form-control email-field" required="required" placeholder="Correo">
+                        </div>
+                          <div class="form-group">
+                              <input type="number" name="numero" class="form-control number-field" required="required" placeholder="Numero">
+                          </div>
+                          <div class="form-group">
+                              <textarea name="mensaje" id="mensaje" required="required" class="form-control" rows="7"placeholder="Cuentanos en que te podemos ayudar?"></textarea>
+                         </div>
+                      </div>
+                      <div class="col col-lg-8 offset-lg-2 pt-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck" required="required">
+                          <label class="form-check-label"  for="gridCheck">
+                            Acepto Terminos y condiciones
+                          </label>
+                        </div>
+                      </div>
+                      <br>
+                    <div class="col col-lg-8 offset-lg-2 pt-2">
+                    <button type="submit" class="btn btn-seven btn-block mb-2">Enviar</button>
+                    </div>
+                  </form>
                 </div>
-            </div>
-        </section>
+          </section>
 
         <!-- Pie de Pagina -->
         <footer id="footer" class="pt-4 pb-4">
